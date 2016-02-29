@@ -37,6 +37,7 @@ namespace model_features {
       // update internal 'time' value and log it
       mod->internal->time_2x = mod->feature->uptime * 2;
       K2::Services::LogInformationF("internal[time_2x] = %d", mod->internal->time_2x);
+	  K2::Services::LogInformationF("internal_2[time_2x] = %d", mod->internal->time_2x);
 
       // log the feature 'uptime' value and update it
       K2::Services::LogInformationF("feature[uptime] = %d", mod->feature->uptime);
