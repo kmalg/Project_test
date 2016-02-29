@@ -1,0 +1,29 @@
+Description
+-----------
+Models can manage states and features which can be used to simulate components behaviors.
+
+Example
+-------
+This example explains how to manage states and features within models.
+
+The model named 'model_states' has a state 'steps' which is updated (+1) every 0.5 second.
+The model named 'model_features' has a state 'uptime' which is updated (+1) every second.
+The models have also internal data ('steps_x10' and 'time_x2') that are updated at the same time.
+
+A log is performed at each update of the state and feature.
+
+To run the example just execute the following commands :
+Note : K2 environment shall be set.
+
+> make
+> ./tu
+
+---------------------------------------------------------
+
+Files : model_states.hpp_, model_states.cpp_, model_features.hpp_, model_features.cpp_, test_02.py_
+
+.. _model_states.hpp: model_states.hpp
+.. _model_states.cpp: model_states.cpp
+.. _model_features.hpp: model_features.hpp
+.. _model_features.cpp: model_features.cpp
+.. _test_02.py: test_02.py

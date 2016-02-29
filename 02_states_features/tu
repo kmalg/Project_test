@@ -1,0 +1,11 @@
+
+. $K2/tu/run_tu.1.sh
+
+
+
+if [ -z "$TU" ]
+then
+   TU=*.py
+fi
+
+. $K2/tu/run_tu.2.sh
